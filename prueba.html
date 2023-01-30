@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="css/icon.css" rel="stylesheet">
+
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      
+      <script type="text/javascript"  src="js/bin/materialize.js"></script>
+     <script src="js/bin/jquery-1.7.2.min"></script>
+      
+      
+        
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <style type="text/css">
+ body{
+    
+    background-image: url(imagenes/parapente.png );
+    background-position: fixed;
+    background-attachment: fixed;
+
+    
+  }
+    
+
+ </style>
+    <body>
+
+<div class="navbar-fixed" >
+
+      <nav class="nav-extended " >
+   <div class="nav-wrapper  light-green darken-3" ><span id="corredor">Guia Turistica</span>
+      <!--<a href="#" class="brand-logo" id="corredor" ></a>-->
+      <a href="#" class="brand-logo"></a>
+      <spam id="btn_left"></spam>
+      <spam id="icon_online"><a href="#" class="brand-logo right"><i class="material-icons">cloud_done</i></a></spam><!-- cloud_off -->
+    </div>
+   </div> 
+   <!-- menu lateral -->
+   
+  <!-- fin menu lateral-->
+       
+   
+
+    
+  </nav>
+
+<ul id="tabs-swipe-demo" class="tabs green"><li class="tab col s3"><a href="#test-swipe-1" onclick="titulo(1)"><img src="imagenes/iconos/itinerario.png" width="30%" align="center"></a></li><li class="tab col s3"><a class="active" href="#test-swipe-2"  onclick="titulo(3)"><img src="imagenes/iconos/montanas.png" width="30%" align="center"></a></li><li class="tab col s3"><a href="#test-swipe-3" onclick="titulo(4)"><img src="imagenes/iconos/cerca.png" width="30%" align="center"></a></li></ul>
+
+<div id="test-swipe-1" class="col s12" style="height: 500px;">
+  
+</div>
+<div id="test-swipe-2" class="col s12" style="height: 500px;">
+</div>
+<div id="test-swipe-3" class="col s12" style="height: 500px;" >
+</div>
+
+
+
+
+    </div>
+
+
+     
+  
+  
+    </body>
+    </html>
+  
+ 
+ 
+
+<script>
+M.AutoInit();
+//var corredores='<table class="centered striped"><tr><td class="center">Descrpcion</td><td class="center">Alojamiento</td></tr><tr><td class="center"><img src="imagenes/la_produccion.jpg" width="50%"></td><td class="center"><img src="imagenes/la_produccion.jpg" width="50%"></td></tr><tr><td class="center">Gastronimia</td><td class="center">Que Hacer?</td></tr><tr><td class="center"><a class="btn-floating btn-large waves-effect waves-light green" onclick="cards('+2+','+corredor+')"><i class="material-icons">local_dining</i></a></td><td class="center"><a class="btn-floating btn-large waves-effect waves-light green" onclick="cards('+3+','+corredor+')"><i class="material-icons">directions_run</i></a></td></tr><tr><td class="center">Galeria</td><td class="center">Datos Utiles</td></tr><tr><td class="center"><a class="btn-floating btn-large waves-effect waves-light green" onclick="cards('+4+','+corredor+')"><i class="material-icons">camera_alt</i></a></td><td class="center"><a class="btn-floating btn-large waves-effect waves-light green" onclick="cards('+5+','+corredor+')"><i class="material-icons">info_outline</i></a></td></tr></table>';
+//$('#test-swipe-1').html(corredores);
+//$('#test-swipe-2').html(corredores);
+//$('#test-swipe-3').html(corredores);
+
+function titulo(numero){
+
+  switch(numero){
+    case 1:
+    $('#corredor').html('Corredores');
+    break;
+    case 2:
+    $('#corredor').html('Productos');
+    break;
+    case 3:
+    $('#corredor').html('Productos');
+    break;
+    case 4:
+    $('#corredor').html('Cerca de ti');
+    break;
+
+  }
+}
+
+var corredores='<table><td class="center"><img src="imagenes/bottones/bermejo.png"  width="60%"></td> <td class="center"><img src="imagenes/bottones/la_costa.png"  width="60%"></td> <tr></tr> <td class="center"><img src="imagenes/bottones/ruta_40.png"  width="60%"></td> <td class="center"><img src="imagenes/bottones/la_produccion.png"  width="60%"></td><tr></tr><td class="center"><img src="imagenes/bottones/los_llanos.png"  width="60%"></td><td class="center"></td></table>';
+
+var productos='<table><td class="center"><img src="imagenes/bottones/qda_del_condor.png"  width="60%"></td><td class="center"><img src="imagenes/bottones/pampa_de_la_viuda.png"  width="60%"></td><tr></tr><td class="center"><img src="imagenes/bottones/parque_dinosaurio.png"  width="60%"></td><td class="center"><img src="imagenes/bottones/senior_penia.png"  width="60%"></td><tr></tr><td class="center"><img src="imagenes/bottones/termas_stra_teresita.png"  width="60%"></td><td class="center"><img src="imagenes/bottones/chaya.png"  width="60%"></td></table>';
+
+var cerca='<table><td class="center"><img src="imagenes/bottones/alojamiento.png"  width="60%"></td><td class="center"><img src="imagenes/bottones/gastronomia.png"  width="60%"></td><tr></tr><td class="center"><img src="imagenes/bottones/transporte.png"  width="60%"></td><td class="center"><img src="imagenes/bottones/informacion.png"  width="60%"></td><tr></tr><td class="center"><img src="imagenes/bottones/emergencia.png"  width="60%"></td><td class="center"></td></table>'
+
+$('#test-swipe-1').html(corredores);
+$('#test-swipe-2').html(productos);
+$('#test-swipe-3').html(cerca);
+</script>
